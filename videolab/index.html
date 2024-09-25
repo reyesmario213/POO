@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <nav class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search" aria-label="Search videos">
+            <button class="btn" aria-label="Login">Login</button>
+        </nav>
+    </header>
+
+    <main class="flex-container">
+        <section class="col-l">
+            <video id="mainVideo" width="720" height="400" controls aria-label="Main video player">
+                <source src="./assent/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="row">
+                <div class="start">
+                    <h2 id="videoTitle">Example Video Title</h2>
+                    <p id="videoInfo">1.3K Views | June, 18, 2021</p>
+                    <div class="user">
+                        <img src="assets/user.png" alt="User avatar" class="avatar-s">
+                        <span class="user-name">Example User Name</span>
+                    </div>
+                </div>
+                <button class="btn" aria-label="Subscribe to channel">Subscribe</button>
+            </div>
+        </section>
+
+        <aside class="col-r">
+            <h3 class="sub-header">Up Next</h3>
+            <div class="video-small" data-src="assent/2.mp4" data-title="Not a Rick Roll" data-info="10M Views | April 1, 2023">
+                <img src="./assent/pe.png" alt="Thumbnail for Not a Rick Roll" class="vid-s">
+                <div class="video-info">
+                    <span class="video-title">Not a Rick Roll</span>
+                    <span class="video-views">10M Views | April 1, 2023</span>
+                </div>
+            </div>
+            <div class="video-small" data-src="assets/video2.mp4" data-title="10 Facts About ET's Cat!" data-info="5M Views | May 15, 2023">
+                <img src="assets/thumbnail2.jpg" alt="Thumbnail for 10 Facts About ET's Cat!" class="vid-s">
+                <div class="video-info">
+                    <span class="video-title">10 Facts About ET's Cat!</span>
+                    <span class="video-views">5M Views | May 15, 2023</span>
+                </div>
+            </div>
+            <div class="video-small" data-src="assets/video3.mp4" data-title="5 Cosplay Tips" data-info="2M Views | June 1, 2023">
+                <img src="assets/thumbnail3.jpg" alt="Thumbnail for 5 Cosplay Tips" class="vid-s">
+                <div class="video-info">
+                    <span class="video-title">5 Cosplay Tips</span>
+                    <span class="video-views">2M Views | June 1, 2023</span>
+                </div>
+            </div>
+            <div class="video-small" data-src="assets/video4.mp4" data-title="Boy Battles Dinobot in Thunderdome" data-info="8M Views | June 10, 2023">
+                <img src="assets/thumbnail4.jpg" alt="Thumbnail for Boy Battles Dinobot in Thunderdome" class="vid-s">
+                <div class="video-info">
+                    <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                    <span class="video-views">8M Views | June 10, 2023</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
